@@ -18,6 +18,15 @@ public class JavaTask_01 {
         System.out.println("Enter number 2:");
         int num2 = scan.nextInt();
 
+
+        System.out.println("maxnum(num1,num2) = " + maxnum(num1, num2));
+
+
+        scan.close();
+    }
+
+    public static int maxnum (int num1, int num2){
+
         int max = 0;
 
         if (num1>num2) {
@@ -30,6 +39,6 @@ public class JavaTask_01 {
             System.out.println("equal");
         }
 
-        scan.close();
+        return max;
     }
 }
