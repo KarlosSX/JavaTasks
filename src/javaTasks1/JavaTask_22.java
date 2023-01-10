@@ -12,13 +12,13 @@ public class JavaTask_22 {
             output:
                silent and listen are anagram
          */
-        anagram("silent", "listen");
+        System.out.println("isAnagram(\"silent\", \"listen\") = " + isAnagram("silent", "listen"));
 
 
     }
 
-    public static String anagram(String str1, String str2) {
-
+    public static boolean isAnagram(String str1, String str2) {
+        boolean result = false;
         String reverse = "";
 
         for (int i = str1.length() - 1; i >= 0; i--) {
@@ -27,10 +27,9 @@ public class JavaTask_22 {
         }
 
         if (str2.equals(reverse)) {
-            boolean result;
-            result()
-
+            result = true;
         }
+        return result;
     }
 
 }
